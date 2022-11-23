@@ -1,0 +1,22 @@
+{
+    "/js/app.js": "/js/app.js",
+    "/scaffolding/core-admin/css/admin-theme.css": "/scaffolding/core-admin/css/admin-theme.css",
+    "/scaffolding/core-admin/css/_page-auth.css": "/scaffolding/core-admin/css/_page-auth.css",
+    "/css/app.css": "/css/app.css",
+    "/scaffolding/plugins/bootstrap-datepicker/bootstrap-datepicker.js": "/scaffolding/plugins/bootstrap-datepicker/bootstrap-datepicker.js",
+    "/scaffolding/plugins/bootstrap-datepicker/datepicker3.css": "/scaffolding/plugins/bootstrap-datepicker/datepicker3.css",
+    "/scaffolding/plugins/date-rangepicker/daterangepicker.js": "/scaffolding/plugins/date-rangepicker/daterangepicker.js",
+    "/scaffolding/plugins/date-rangepicker/daterangepicker-bs3.css": "/scaffolding/plugins/date-rangepicker/daterangepicker-bs3.css",
+    "/scaffolding/plugins/timepicker/bootstrap-timepicker.min.js": "/scaffolding/plugins/timepicker/bootstrap-timepicker.min.js",
+    "/scaffolding/plugins/timepicker/bootstrap-timepicker.min.css": "/scaffolding/plugins/timepicker/bootstrap-timepicker.min.css",
+    "/scaffolding/plugins/bootstrap.js": "/scaffolding/plugins/bootstrap.js",
+    "/scaffolding/plugins/modernizr.custom.js": "/scaffolding/plugins/modernizr.custom.js",
+    "/scaffolding/plugins/jquery-ui.min.js": "/scaffolding/plugins/jquery-ui.min.js",
+    "/scaffolding/plugins/tether.min.js": "/scaffolding/plugins/tether.min.js",
+    "/scaffolding/plugins/jquery-easy.js": "/scaffolding/plugins/jquery-easy.js",
+    "/scaffolding/plugins/jquery-card-toggle.js": "/scaffolding/plugins/jquery-card-toggle.js",
+    "/scaffolding/plugins/jquery.actual.min.js": "/scaffolding/plugins/jquery.actual.min.js",
+    "/scaffolding/plugins/moment.min.js": "/scaffolding/plugins/moment.min.js",
+    "/scaffolding/plugins/jquery.sieve.min.js": "/scaffolding/plugins/jquery.sieve.min.js",
+    "/scaffolding/plugins/accounting.min.js": "/scaffolding/plugins/accounting.min.js"
+}

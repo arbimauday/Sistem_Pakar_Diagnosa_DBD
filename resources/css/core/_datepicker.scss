@@ -1,0 +1,110 @@
+/* Plugins
+--------------------------------------------------
+Datepicker
+https://github.com/eternicode/bootstrap-datepicker
+*/
+.datepicker.dropdown-menu {
+    padding: 16px 25px;
+    border-radius: 2px;
+    //font-size: 12px;
+}
+.datepicker:after {
+    border-bottom-color: #f4f6f9;
+}
+.datepicker thead tr .datepicker-switch {
+    color: #6f7b8a;
+    font-size: 13px;
+}
+.datepicker thead tr .next,
+.datepicker thead tr .prev {
+    color: $primary-brand;
+    content: '';
+    font-size: 0px;
+}
+.datepicker thead tr .next:before,
+.datepicker thead tr .prev:before {
+    color: $primary-brand;
+    font-family: 'FontAwesome';
+    font-size: 10px;
+}
+.datepicker thead tr .prev:before {
+    content: "\f053";
+}
+.datepicker thead tr .next:before {
+    content: "\f054";
+}
+.datepicker thead tr .dow {
+    //font-family: 'Montserrat';
+    color: $primary-brand;
+    text-transform: uppercase;
+    font-size: 11px;
+}
+.datepicker thead tr th {
+    width: 31px;
+    height: 29px;
+}
+.datepicker tbody tr .odd {
+    color: #d0d3d8;
+}
+.datepicker table tr td {
+    width: 31px;
+    height: 29px;
+}
+.datepicker table tr td.old,
+.datepicker table tr td.new {
+    color: #eaecee;
+}
+.datepicker table tr td.day:hover {
+    background: #f2f4f5;
+}
+.datepicker table tr td.active {
+    background-color: $primary-brand !important;
+}
+.datepicker table tr td.active,
+.datepicker table tr td.active:hover,
+.datepicker table tr td.active.disabled,
+.datepicker table tr td.active.disabled:hover {
+    background-image: none;
+    text-shadow: none;
+    font-weight: 600;
+}
+.datepicker table tr td.today,
+.datepicker table tr td.today:hover,
+.datepicker table tr td.today.disabled,
+.datepicker table tr td.today.disabled:hover {
+    background-color: #f2f4f5;
+    background-image: none;
+    color: #fff;
+}
+.datepicker table tr td span {
+    border-radius: 4px;
+    width: 42px;
+    height: 42px;
+    line-height: 42px;
+}
+.datepicker table tr td span.active {
+    background-color: $primary-brand !important;
+}
+.datepicker table tr td span.active,
+.datepicker table tr td span.active:hover,
+.datepicker table tr td span.active.disabled,
+.datepicker table tr td span.active.disabled:hover {
+    background-image: none;
+    border: none;
+    text-shadow: none;
+}
+.datepicker.dropdown-menu {
+    border-color: #eaecee;
+    color: #7a8994;
+}
+.datepicker.datepicker-dropdown.datepicker-orient-bottom:before {
+    border-color: #eaecee;
+}
+.datepicker-inline {
+    width: auto;
+}
+.input-daterange .input-group-addon {
+    text-shadow: none;
+    border: 0;
+    margin: 0;
+}

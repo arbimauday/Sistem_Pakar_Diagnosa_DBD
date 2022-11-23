@@ -1,0 +1,37 @@
+@import "variables-admin";
+
+.login-wrapper {
+    height: 100%;
+    padding-left: 10px;
+    padding-right: 10px;
+
+    .wp-image {
+        background-image: url("../../assets/admin/images/bg-login.svg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        overflow: hidden;
+        padding: 80px 80px 67px;
+    }
+    .wp-auth {padding: 40px 16px 20px;}
+}
+.login-wrapper > * {height: 100%;}
+//.logo-admin-login {width: 16vh;}
+.btn-login {
+    padding-left: 45px;
+    padding-right: 45px;
+}
+
+@include media-breakpoint-up(lg) {
+    .login-wrapper {
+        .wp-image {padding: 80px 80px 67px;}
+        .wp-auth {padding: 90px 124px 64px;}
+    }
+}
+
+@include media-breakpoint-between(md, lg) {
+    .login-wrapper {
+        .wp-image {padding: 80px 40px 67px;}
+        .wp-auth {padding: 90px 40px 64px;}
+    }
+}

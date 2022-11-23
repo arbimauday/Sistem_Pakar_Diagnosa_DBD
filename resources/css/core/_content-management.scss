@@ -1,0 +1,21 @@
+.featured-image .image {
+    opacity: 1;
+    transition: .5s ease;
+}
+
+.featured-image .middle {
+    transition: .5s ease;
+    opacity: 0;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+}
+
+.featured-image:hover .image {
+    opacity: 0.3;
+}
+
+.featured-image:hover .middle {
+    opacity: 1;
+}

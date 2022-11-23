@@ -1,0 +1,48 @@
+.login-wrapper {
+  height: 100%;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.login-wrapper .wp-image {
+  background-image: url(/images/bg-login.svg?43236a038e5b596099e3ceb58e64db09);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  overflow: hidden;
+  padding: 80px 80px 67px;
+}
+
+.login-wrapper .wp-auth {
+  padding: 40px 16px 20px;
+}
+
+.login-wrapper > * {
+  height: 100%;
+}
+
+.btn-login {
+  padding-left: 45px;
+  padding-right: 45px;
+}
+
+@media (min-width: 992px) {
+  .login-wrapper .wp-image {
+    padding: 80px 80px 67px;
+  }
+
+  .login-wrapper .wp-auth {
+    padding: 90px 124px 64px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1199.98px) {
+  .login-wrapper .wp-image {
+    padding: 80px 40px 67px;
+  }
+
+  .login-wrapper .wp-auth {
+    padding: 90px 40px 64px;
+  }
+}
+

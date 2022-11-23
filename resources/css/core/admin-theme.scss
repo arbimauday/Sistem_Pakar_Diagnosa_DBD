@@ -1,0 +1,310 @@
+@import "variables-admin";
+@import "~bootstrap/scss/bootstrap";
+@import "~font-awesome";
+@import url('https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900');
+
+body {
+    position: relative;
+    min-height: 100vh;
+    width: 100%;
+    overflow: hidden;
+}
+a:hover{text-decoration: none}
+
+.overflow-y {overflow-y: auto;}
+
+.pace {
+    .pace-progress {
+        background: $primary-brand;
+        height: 3px;
+    }
+}
+
+.logo-admin-login {width: 22vh;}
+
+
+.paragraph-13{
+    font-size: 13px;
+}
+
+.mt-55{
+    margin-top: 55px;
+}
+
+
+.btn:hover {text-decoration: none;}
+
+.btn-primary-brand-blue{
+    color: #fff;
+    background-color: #3563E9;
+    border-color: #3563E9;
+}
+
+.btn-primary-brand-blue:hover{
+    color: #fff !important;
+}
+
+.text-primary-brand-blue{
+    color: #3563E9;
+}
+
+.badge-tint-500{
+    background-color: #2b40a157;
+}
+
+.ul-dot-15 {
+    padding-left: 15px;
+    margin-bottom: 0;
+    li {
+        font-size: 1rem;
+        margin-bottom: 0.5rem;
+    }
+}
+
+
+.row {
+    margin-left: calc(-#{$bs-gutter-x} * .5);
+    margin-right: calc(-#{$bs-gutter-x} * .5);
+}
+.row>* {
+    padding-left: calc(#{$bs-gutter-x} * .5);
+    padding-right: calc(#{$bs-gutter-x} * .5);
+}
+
+.card {
+    margin-bottom: 20px;
+    .card-header {
+        //padding: 1rem 1rem .5rem;
+        padding: 1rem 1rem;
+        margin-bottom: 0;
+        background-color: unset;
+        border-bottom: unset;
+
+        .card-title {
+            color: $blue-100;
+            font-size: 1.125rem;
+            margin-bottom: 0;
+            font-weight: 500;
+        }
+    }
+
+    .card-body {
+        //.row>* {
+        //    padding-left: calc(30px * .5);
+        //    padding-right: calc(30px * .5);
+        //}
+    }
+}
+
+.row-theme>* {
+    padding-left: calc(#{$bs-gutter-x} * .5);
+    padding-right: calc(#{$bs-gutter-x} * .5);
+}
+
+.preview-title {
+    color: $blue-100;
+    font-size: 1.125rem;
+    margin-bottom: 0;
+    font-weight: 500;
+    padding-bottom: .5rem;
+    padding-top: 1rem;
+}
+
+.cursor-pointer {cursor: pointer;}
+
+select.custom-icon::after {
+    display: inline-block;
+    margin-left: 0.255em;
+    vertical-align: 0.255em;
+    content: "";
+    border-top: 0.3em solid;
+    border-right: 0.3em solid transparent;
+    border-bottom: 0;
+    border-left: 0.3em solid transparent;
+}
+
+
+@mixin config-thumbnail-wp($size) {
+    width: $size;
+    height: $size;
+    > * {line-height: $size}
+}
+
+.thumbnail-wrapper {
+    display: inline-block;
+    overflow: hidden;
+    float: left;
+}
+
+.thumbnail-wrapper > * {
+    vertical-align: middle;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+
+.circular {border-radius: 50%}
+
+.thumbnail-wrapper.d24 {@include config-thumbnail-wp(24px);}
+.thumbnail-wrapper.d32 {@include config-thumbnail-wp(32px);}
+.thumbnail-wrapper.d39 {@include config-thumbnail-wp(39px);}
+.thumbnail-wrapper.d45 {@include config-thumbnail-wp(45px);}
+.thumbnail-wrapper.d46 {@include config-thumbnail-wp(46px);}
+.thumbnail-wrapper.d64 {@include config-thumbnail-wp(64px);}
+.thumbnail-wrapper.d86 {@include config-thumbnail-wp(86px);}
+.thumbnail-wrapper.d104 {@include config-thumbnail-wp(104px);}
+
+
+ul.long-tab{
+    overflow-x: auto;
+    display: block;
+    white-space: nowrap;
+    overflow-y: hidden;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+
+    li.nav-item{
+        display: inline-block;
+    }
+
+    li.nav-item .nav-link.active{
+        border-bottom: 3px solid;
+    }
+}
+
+
+.box-avatar {
+    list-style: none;
+    position: relative;
+    width: 100%;
+    display: flex;
+
+    .inline {
+        margin-left: 1rem;
+        width: 80%;
+        p {
+            margin: 0;
+            color: #000;
+            font-size: .8rem;
+            font-weight: 600;
+            line-height: 20px;
+        }
+
+        .sub {
+            font-size: .75rem;
+            font-weight: 400;
+            color: $neutral-400;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            overflow: hidden;
+        }
+    }
+}
+
+.wp-activity-feed {
+    max-height: 375px;
+    overflow: auto;
+    li {padding: .75rem 0;}
+    li:nth-child(1) {padding-top: 0;}
+}
+
+.wp-btn-link {
+    width: 100%;
+    margin-top: .5rem;
+    margin-bottom: .5rem;
+}
+
+.btn-link-text {
+    color: $blue-400;
+    font-size: 1rem;
+    line-height: 24px;
+    font-weight: 500;
+    text-decoration: none;
+
+    :hover{text-decoration: none}
+
+    span.icon {margin-right: 1.125rem}
+    span, svg {color: $blue-400;}
+}
+
+.unset-min-height {
+    min-height: unset;
+}
+
+.bootstrap-timepicker-widget.dropdown-menu.open{
+    z-index: 9999;
+}
+
+.react-time-picker__wrapper{
+    border: none !important;
+}
+
+.react-time-picker__clear-button.react-time-picker__button, .react-time-picker__clock-button.react-time-picker__button{
+    margin: 0 !important;
+}
+
+.react-time-picker__inputGroup__input:invalid{
+    background: transparent !important;
+}
+
+.max-height-100 {max-height: 100%!important;}
+.max-height-250 {
+    max-height: 250px;
+    overflow: auto;
+}
+
+.wp-btn-mt-0 {
+    button {margin-top: 0!important;}
+}
+
+.svg-28 {
+    svg {
+        width: 28px;
+        height: 28px;
+    }
+}
+
+.badge-new-notification {
+    padding: 0.25em 0.4em!important;
+    position: absolute;
+    left: 14px;
+    font-size: 9px!important;
+}
+
+.list-hover:hover {
+    cursor: pointer;
+    background-color: var(--neutral-400);
+}
+
+
+.wh-20-svg { svg {height: 20px; width: 20px;} }
+.wh-18-svg { svg {height: 18px; width: 18px;} }
+
+
+@import "_typography";
+@import "_form";
+@import "_container";
+@import "_sidebar";
+@import "_navbar";
+
+@import "_button";
+//
+@import "_partial";
+@import "_notification";
+@import "_modal";
+//@import "_datepicker";
+//@import "_card-collapse";
+//@import "font-icons/_pages-icons.css";
+@import "_pagination";
+
+//@import "_property-villa";
+//@import "_form-wizard";
+//@import "_fullcalendar";
+//@import "_content-management";
+
+//@import "_carousel";
+
+//@import "_responsive-general";
+
+//@import "_customer";
+//@import "_menu";
+//@import "_form-rating";

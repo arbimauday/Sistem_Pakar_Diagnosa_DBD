@@ -1,0 +1,36 @@
+ul {
+
+}
+
+.pagination li {
+    cursor: pointer;
+    padding: 2px 8px !important;
+    margin: 3px;
+    background: white;
+    display: inline-block;
+    border: 1px solid #dae0e5;
+    border-radius: 6px;
+
+}
+
+.pagination li.active {
+    background-color: $primary-brand;
+    color: #fff;
+
+    &:hover {
+        background-color: $blue-600;
+    }
+
+}
+
+.pagination li.active a {
+    font-size: 16px !important;
+}
+
+.pagination li:hover {
+    background-color: $blue-600;
+}
+
+.margin-10 {
+    margin: 10px !important;
+}

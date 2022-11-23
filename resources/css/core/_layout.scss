@@ -1,0 +1,8 @@
+body[daya-layout="mobile"] {
+
+}
+
+
+body[daya-layout="web"] {
+    .page-sidebar {@include config-sidebar-desktop();}
+}

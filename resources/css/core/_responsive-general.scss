@@ -1,0 +1,98 @@
+@include media-breakpoint-between(md, lg) {
+
+}
+
+@include media-breakpoint-between(sm, md) {
+    .row {
+        margin-left: calc(-#{$bs-gutter-x-sm} * .5);
+        margin-right: calc(-#{$bs-gutter-x-sm} * .5);
+    }
+    .row>* {
+        padding-left: calc(#{$bs-gutter-x-sm} * .5);
+        padding-right: calc(#{$bs-gutter-x-sm} * .5);
+    }
+}
+
+@include media-breakpoint-down(lg) {
+    .wp-bottom-footer {
+        left: 0;
+    }
+}
+
+@include media-breakpoint-down(md) {
+    .modal {
+        padding-left: unset!important;
+        .modal-dialog {
+            width: 90%!important;
+            max-width: unset!important;
+        }
+    }
+
+    .page-sidebar-on-mobile {
+        display: block;
+        z-index: 1004;
+
+        .logo-container {text-align: left}
+
+        .nav_list {
+            li {
+                justify-content: unset!important;
+
+                a {
+                    .menu-icon {padding-right: 14px!important;}
+                    .menu-title {display: block!important;}
+                }
+            }
+        }
+    }
+
+    form {padding-bottom: 1rem;}
+
+}
+
+@include media-breakpoint-down(sm) {
+
+    .modal {
+        .modal-dialog {
+            width: 100%!important;
+            max-width: unset!important;
+            margin: unset!important;
+            padding: .5rem;
+        }
+    }
+
+    .modal.modal-responsive-on-bottom {
+        .modal-dialog {
+            margin: 0!important;
+            width: 100%!important;
+            bottom: 0!important;
+            position: absolute!important;
+        }
+
+        .modal-content-wrapper {
+            display: unset!important;
+            vertical-align: unset!important;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        .modal-content {
+            bottom: 0;
+            //min-height: 65vh;
+            max-height: 65vh;
+            overflow-y: hidden;
+            position: relative;
+        }
+
+        .modal-body {overflow-y: auto;}
+    }
+
+    //.modal.fade .modal-dialog {
+    //    transform: translate3d(0, 100%, 0);
+    //    transition: transform 0.3s ease-out;
+    //}
+    //.modal.in .modal-dialog {
+    //    transform: translate3d(0, 0, 0);
+    //}
+}

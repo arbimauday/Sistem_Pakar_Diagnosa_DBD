@@ -1,0 +1,35 @@
+.customer-banner{
+    background-image: url("../../assets/admin/images/pattern-group.png");
+    background-size: cover;
+}
+
+.fillHeart{
+    fill: #DE5263;
+}
+
+.amenity{
+    position: absolute;
+    bottom: 0;
+}
+
+.fillStar{
+    fill: #EFCF5D;
+}
+
+.fillStarRed{
+    fill: #DE5263;
+}
+
+.img-cover-wishlist-customer{
+    height: 150px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.small-text-wishlist{
+    font-size: .8em;
+}
+
+.w-200px{
+    width: 200px !important;
+}

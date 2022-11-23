@@ -1,0 +1,192 @@
+@import "~bootstrap/scss/functions";
+@import "~bootstrap/scss/variables";
+@import "~bootstrap/scss/mixins";
+//@import "~bootstrap/scss/grid";
+
+$bs-gutter-x: 20px;
+$bs-gutter-x-sm: 25px;
+
+// scss-docs-start border-radius-variables
+$border-radius:               .5rem;
+$border-radius-sm:            .2rem !default;
+$border-radius-lg:            .3rem !default;
+$border-radius-pill:          50rem !default;
+// scss-docs-end border-radius-variables
+
+
+//Colors
+$primary-brand-orange: #FF7D00;
+$primary-brand: #3563E9;
+$secondary-brand: #606060;
+$primary: #3D5CE6;
+
+$neutral-100: #26273B;
+$neutral-200: #454560;
+$neutral-300: #6F708B;
+$neutral-400: #ACADC1;
+$neutral-500: #F0F0F5;
+$neutral-600: #F9F9FC;
+
+$tint-100: #994B00;
+$tint-200: #CC6400;
+$tint-300: #FF7D00;
+$tint-400: #FF9733;
+$tint-500: #FFCB99;
+$tint-600: #FFF2E6;
+
+$blue-100: #162A62;
+$blue-200: #2646A5;
+$blue-300: #3563E9;
+$blue-400: #7896F0;
+$blue-500: #C0CFF8;
+$blue-600: #EBEFFD;
+
+$success-100: #208E66;
+$success-200: #2DB986;
+$success-300: #C0F4E1;
+
+$danger-100: #A73442;
+$danger-200: #DE5263;
+$danger-300: #FACDD3;
+
+$warning-100: #A58D38;
+$warning-200: #EFCF5D;
+$warning-300: #F8EFD1;
+
+$info-100: #3461A5;
+$info-200: #669AE8;
+$info-300: #DCE8FA;
+
+$black-100: #000;
+
+$theme-colors: (
+    'primary-brand': $primary-brand,
+    'secondary-brand': $secondary-brand,
+    'primary': $primary,
+
+    'neutral-100': $neutral-100,
+    'neutral-200': $neutral-200,
+    'neutral-300': $neutral-300,
+    'neutral-400': $neutral-400,
+    'neutral-500': $neutral-500,
+    'neutral-600': $neutral-600,
+
+    'tint-100': $tint-100,
+    'tint-200': $tint-200,
+    'tint-300': $tint-300,
+    'tint-400': $tint-400,
+    'tint-500': $tint-500,
+    'tint-600': $tint-600,
+
+    'blue-100': $blue-100,
+    'blue-200': $blue-200,
+    'blue-300': $blue-300,
+    'blue-400': $blue-400,
+    'blue-500': $blue-500,
+    'blue-600': $blue-600,
+
+    'success-100': $success-100,
+    'success-200': $success-200,
+    'success-300': $success-300,
+
+    'danger-100': $danger-100,
+    'danger-200': $danger-200,
+    'danger-300': $danger-300,
+
+    'warning-100': $warning-100,
+    'warning-200': $warning-200,
+    'warning-300': $warning-300,
+
+    'info-100': $info-100,
+    'info-200': $info-200,
+    'info-300': $info-300,
+
+    'black-100': $black-100
+);
+
+// font family
+$font-family-base: 'Poppins';
+$font-family-sans-serif: 'Poppins';
+$font-family-monospace: 'Poppins';
+
+// Spacing
+$spacers: (
+    '1-px': 2px,
+    '2-px': 4px,
+    '3-px': 8px,
+    '4-px': 16px,
+    '5-px': 20px,
+    '6-px': 24px,
+    '7-px': 48px,
+    '8-px': 64px,
+);
+
+
+// Form
+
+// scss-docs-start form-text-variables
+$form-text-margin-top:                  .25rem;
+$form-text-font-size:                   $small-font-size !default;
+$form-text-font-style:                  normal;
+$form-text-font-weight:                 normal;
+$form-text-color:                       $neutral-100;
+// scss-docs-end form-text-variables
+
+// scss-docs-start form-label-variables
+$form-label-margin-bottom:              .5rem;
+$form-label-font-size:                  .8rem;
+$form-label-font-style:                 normal;
+$form-label-font-weight:                400;
+$form-label-color:                      $neutral-200;
+// scss-docs-end form-label-variables
+
+// scss-docs-start form-input-variables
+$input-padding-y:                       $input-btn-padding-y !default;
+$input-padding-x:                       $input-btn-padding-x !default;
+$input-font-family:                     $input-btn-font-family !default;
+$input-font-size:                       1rem;
+$input-font-weight:                     $font-weight-base !default;
+$input-line-height:                     $input-btn-line-height !default;
+
+$input-padding-y-sm:                    $input-btn-padding-y-sm !default;
+$input-padding-x-sm:                    $input-btn-padding-x-sm !default;
+$input-font-size-sm:                    $input-btn-font-size-sm !default;
+
+$input-padding-y-lg:                    $input-btn-padding-y-lg !default;
+$input-padding-x-lg:                    $input-btn-padding-x-lg !default;
+$input-font-size-lg:                    $input-btn-font-size-lg !default;
+
+$input-bg:                              $body-bg;
+$input-disabled-bg:                     #C9C9D8;
+$input-disabled-border-color:           null !default;
+
+$input-color:                           $neutral-100;
+$input-border-color:                    #C9C9D8;
+$input-border-width:                    $input-btn-border-width !default;
+$input-box-shadow:                      unset;
+
+$input-border-radius:                   .5rem;
+$input-border-radius-sm:                $border-radius-sm !default;
+$input-border-radius-lg:                $border-radius-lg !default;
+
+$input-focus-bg:                        $input-bg;
+$input-focus-border-color:              $blue-400;
+$input-focus-color:                     $input-color;
+$input-focus-width:                     $input-btn-focus-width !default;
+$input-focus-box-shadow:                unset;
+
+$input-placeholder-color:               $neutral-400;
+$input-plaintext-color:                 $body-color;
+
+
+
+
+// Cards
+$card-spacer-x:                     1rem;
+
+
+
+// Allows for customizing button radius independently from global border radius
+$btn-border-radius:           .5rem;
+$btn-border-radius-sm:        $border-radius-sm !default;
+$btn-border-radius-lg:        $border-radius-lg !default;

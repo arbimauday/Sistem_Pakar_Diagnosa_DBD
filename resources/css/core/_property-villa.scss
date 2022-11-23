@@ -1,0 +1,67 @@
+.pv-image-tbl {
+    width: 130px;
+    height: 96px;
+    overflow: hidden;
+    &.is-empty {
+        background-color: $neutral-400;
+        display: table-cell;
+        text-align: center;
+        vertical-align: middle;
+    }
+    img {
+        object-fit: cover;
+    }
+}
+
+.img-cove-w-100 {
+    object-fit: cover;
+    width: 100%;
+}
+
+.status-property-villa {
+    .approved, .Approved, .publish, .on_sale {
+        background-color: #28a745;
+        color: #fff;
+    }
+    .pending, .not_completed_yet  {
+        background-color: #ffc107;
+        color: #212529;
+    }
+    .rejected, .sold_out, .cancel{
+        background-color: #dc3545;
+        color: #fff;
+    }
+
+    .draft {
+        background-color: $neutral-300;
+        color: #fff;
+    }
+
+    .rented {
+        background-color: #3498da;
+        color: #fff;
+    }
+}
+
+
+.beta-avatar-text {
+    justify-content: center;
+    align-items: center;
+    display: flex !important;
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.img-blank-min-h {
+    min-height: 200px;
+}
+
+.pv-img-imb {
+    width: 100%;
+    min-height: 215px;
+
+    img {
+        height: 100%;
+        width: 100%;
+    }
+}

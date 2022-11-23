@@ -1,0 +1,26 @@
+.nested-menu{
+    .single-item:hover{
+        background-color:#f8f8f8;
+    }
+    .single-item{
+        padding:.5em;
+    }
+    .nestable-item-name {
+        padding:unset !important;
+        .label-menu{
+            display:flex;
+            align-items:center;
+        }
+        .label-menu:before{
+            content: url('/scaffolding/icons/drag.svg');
+            margin-right: .8em;
+        }
+        .action {
+            display: flex;
+            align-items: center;
+            span{
+                margin: 0 5px;
+            }
+        }
+    }
+}

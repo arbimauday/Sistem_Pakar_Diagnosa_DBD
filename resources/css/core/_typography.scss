@@ -1,0 +1,64 @@
+@mixin config-typography($size, $letterSpacing, $lineHeight, $fontWeight: normal) {
+    font-size: $size;
+    letter-spacing: $letterSpacing;
+    line-height: $lineHeight;
+    font-weight: $fontWeight;
+}
+
+
+/* general text */
+.body-16, .paragraph-16 {@include config-typography(16px!important, normal!important, 24px)}
+body, p, .p {@include config-typography(14px, normal, 20px)}
+
+.leading {@include config-typography(16px, normal, 24px)}
+.leading-18 {@include config-typography(18px, normal, 24px)}
+
+.caption {@include config-typography(12px, normal, 15px)}
+
+label, .label {@include config-typography(12px, normal, 17.5px)}
+.label-14 {@include config-typography(14px, normal, 17.5px)}
+
+button, .btn {@include config-typography(16px, normal, 24px)}
+.btn-small {@include config-typography(14px, normal, 24px)}
+
+.a-16, .link-16 {@include config-typography(16px, normal, 19.41px)}
+a, .link {@include config-typography(14px, normal, 19.41px)}
+
+.small-text {@include config-typography(12px, normal, 18px)}
+
+
+/* typography heading */
+.h6, h6 {@include config-typography(16px, 0px, 20px, 600)}
+.h5, h5 {@include config-typography(20px, -0.12px, 25px, 600)}
+.h4, h4 {@include config-typography(26px, -0.2px, 32.5px, 600)}
+.h3, h3 {@include config-typography(34px, -0.32px, 42.5px, 600)}
+.h2, h2 {@include config-typography(42px, -0.37px, 52.5px, 600)}
+.h1, h1 {@include config-typography(51px, -0.45px, 67.5px, 600)}
+
+/* typography font weight*/
+.f-w-100 {font-weight: 100 !important;}
+.f-w-200 {font-weight: 200 !important;}
+.f-w-300 {font-weight: 300 !important;}
+.f-w-400 {font-weight: 400 !important;}
+.f-w-500 {font-weight: 500 !important;}
+.f-w-600 {font-weight: 600 !important;}
+.f-w-700 {font-weight: 700 !important;}
+.f-w-800 {font-weight: 800 !important;}
+.f-w-900 {font-weight: 900 !important;}
+.normal {font-weight: normal !important;}
+
+
+@mixin config_text_line($tlFontSize, $tlColor) {
+    font-size: $tlFontSize;
+    font-weight: 400;
+    color: $tlColor;
+    padding-bottom: 0.5rem;
+    margin-bottom: 0;
+}
+.text-line-first {
+    @include config_text_line(0.875rem, $neutral-100);
+}
+.text-line-second {
+    @include config_text_line(0.75rem, $neutral-300);
+}
+

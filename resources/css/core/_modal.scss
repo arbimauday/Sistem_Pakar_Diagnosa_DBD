@@ -1,0 +1,13 @@
+.modal {
+    &.slide-up {
+        .modal-dialog {
+            margin: auto;
+            height: 100%;
+            display: table;
+        }
+        .modal-content-wrapper {
+            display: table-cell;
+            vertical-align: middle;
+        }
+    }
+}

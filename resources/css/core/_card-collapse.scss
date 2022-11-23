@@ -1,0 +1,137 @@
+/* Pages notification holder */
+.card-header a:not(.btn) {
+    color: #7a8994 !important;
+    opacity: .4;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.card-header a:not(.btn).card-refresh {
+    -webkit-transition: opacity 0.3s ease;
+    transition: opacity 0.3s ease;
+}
+.card-header a:not(.btn).card-refresh.refreshing {
+    opacity: 1;
+}
+.card-header .dropdown-menu {
+    margin-top: 5px;
+}
+.card-header .dropdown-menu .dropdown-item {
+    padding: 0 20px !important;
+}
+.card-header .dropdown-menu .dropdown-item:hover {
+    opacity: 1;
+    background-color: transparent;
+}
+.card-header a[data-toggle]:hover {
+    opacity: 1;
+}
+.card-icon {
+    -moz-osx-font-smoothing: grayscale;
+    font-family: "pages-icon";
+    font-style: normal;
+    font-variant: normal;
+    font-weight: normal;
+    line-height: 1;
+    text-transform: none;
+}
+.card-icon-close:before {
+    content: "\e60a";
+}
+.card-icon-maximize:before {
+    content: "\e634";
+}
+.card-icon-refresh:before {
+    content: "\e600";
+}
+.card-icon-collapse:before {
+    content: "\e62c";
+}
+.card-icon-settings:before {
+    content: "\e655";
+}
+.card-icon-refresh-lg-master,
+.card-icon-refresh-lg-white {
+    width: 15px;
+    height: 15px;
+    display: block;
+    background-size: cover;
+    -webkit-transition: opacity 0.3s ease;
+    transition: opacity 0.3s ease;
+}
+.card-icon-refresh-lg-master.fade,
+.card-icon-refresh-lg-white.fade {
+    opacity: 0.1;
+}
+
+//.card-icon-refresh-lg-master {
+//    background-image: url('../img/progress/progress-circle-lg-master-static.svg');
+//}
+//.card-icon-refresh-lg-white {
+//    background-image: url('../img/progress/progress-circle-lg-white-static.svg');
+//}
+
+.card-icon-refresh-lg-master-animated,
+.card-icon-refresh-lg-white-animated {
+    width: 15px;
+    height: 15px;
+    display: block;
+    background-size: cover;
+    opacity: 0;
+    -webkit-transition: opacity 0.3s ease;
+    transition: opacity 0.3s ease;
+}
+.card-icon-refresh-lg-master-animated.active,
+.card-icon-refresh-lg-white-animated.active {
+    opacity: 1;
+}
+
+//.card-icon-refresh-lg-master-animated {
+//    background-image: url('../img/progress/progress-circle-lg-master.svg');
+//}
+//.card-icon-refresh-lg-white-animated {
+//    background-image: url('../img/progress/progress-circle-lg-white.svg');
+//}
+
+.card.card-drop-down {
+    .card-header {
+        display: flex;
+        align-content: center;
+
+        .card-controls {margin-left: auto;}
+    }
+}
+.card.card-drop-down .card-header .card-title {
+    text-transform: uppercase;
+    display: inline-block;
+    //letter-spacing: 0.06em;
+    //font-size: 10.5px;
+    //font-weight: 500;
+    //margin: 0;
+    //padding: 0;
+    line-height: normal;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    //filter: alpha(opacity=40);
+    transition: opacity 0.3s ease;
+}
+
+.card.card-drop-down .card-header .card-controls {
+    float: right;
+    margin-top: -3px;
+}
+.card.card-drop-down .card-header .card-controls ul {
+    margin: 0;
+    padding: 0;
+}
+.card.card-drop-down .card-header .card-controls ul li {
+    display: inline-block;
+    list-style: none;
+    line-height: 0;
+
+    a {font-size: 1.25rem;}
+}
+.card.card-drop-down .card-header .card-controls:after {
+    content: "";
+    display: table;
+    clear: both;
+}

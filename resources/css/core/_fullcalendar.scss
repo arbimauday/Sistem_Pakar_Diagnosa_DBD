@@ -1,0 +1,16 @@
+.fc .fc-col-header-cell-cushion {
+    padding: 10px 4px !important;
+    color: $neutral-400 !important;
+}
+
+.fc .fc-daygrid-day-number{
+    width: 100%;
+}
+
+td.fc-daygrid-day:hover .wrap-button{
+    opacity: 1;
+}
+
+.wrap-button{
+    opacity: 0;
+}
