@@ -27,6 +27,14 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <style>
+        .pagination li {
+            border: 0!important;
+            margin: 0;
+            padding: 0!important;
+        }
+    </style>
 </head>
 <body style="background-color: #FAFDFF; overflow-y: auto; @yield('addStyleBody')" class="h-100">
 @yield('content')
@@ -36,5 +44,9 @@
         <p class="text-center text-whiteP text-blue-500 mb-0 small-text">© 2022 - TA  By  Nora</p>
     </div>
 </footer>
+
+<!-- Option 1: Bootstrap Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+@livewireScripts
 </body>
 </html>
