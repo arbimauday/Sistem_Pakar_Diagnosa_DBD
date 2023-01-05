@@ -20,7 +20,7 @@
                 <div class="container">
                     <div class="w-100 d-flex" id="navbarText">
                         <div class="ml-auto py-1">
-                            <a href="{{route('home.landing')}}" class="btn btn-blue-300 btn-sm">Home</a>
+                            <a href="{{route('home')}}" class="btn btn-blue-300 btn-sm">Home</a>
                         </div>
                     </div>
                 </div>
@@ -65,6 +65,34 @@
                                 <div class="pengecekan-konten">
 {{--                                    <h4 style="font-weight: bold">Silahkan Jawab Pertanyaan Berikut</h4>--}}
                                     {{-- <p class="mt-4">Sistem pakar adalah program komputer yang menyimulasi penilaian dan perilaku manusia atau organisasi yang memiliki pengetahuan dan pengalaman ahli dalam bidang tertentu. Pada sistem pakar yang dikembangkan disini lebih mengarah kepada sistem pakar diagnosis penyakir demam berdarah</p> --}}
+
+
+
+                                    <form class="my-4">
+                                        <h3 class="">Biodata</h3>
+                                        <div class="mb-3">
+                                            <label class="text-left w-100" for="id-fullName">Nama Panjang*</label>
+                                            <input wire:model="fullName" id="id-fullName" type="text" class="form-control" placeholder="e.g Samuel Meko">
+                                            @error('fullName') <p class="text-danger text-left w-100 mt-2">{{ $message }}</p>@enderror
+                                        </div>
+                                        <div class="mb-3">
+                                            <label class="text-left w-100" for="id-age">Umur*</label>
+                                            <input type="number" id="id-age" min="1" class="form-control" placeholder="e.g 16" wire:model="age" >
+                                            @error('age') <p class="text-danger text-left w-100 mt-2">{{ $message }}</p>@enderror
+                                        </div>
+                                        <div class="mb-3">
+                                            <div class="form-group">
+                                                <label class="text-left w-100" for="exampleFormControlSelect1">Jenis Kelamin*</label>
+                                                <select wire:model="gender" class="form-control" name="gender">
+                                                    <option selected>Choose...</option>
+                                                    <option value="Laki-Laki">Laki-Laki</option>
+                                                    <option value="Perempuan">Perempuan</option>
+                                                </select>
+                                                @error('gender') <p class="text-danger text-left w-100 mt-2">{{ $message }}</p>@enderror
+                                            </div>
+                                        </div>
+                                    </form>
+
                                     @foreach ($gejalas as $gejala)
                                         <h6 class="mt-5">Apakah Anda Mengalami <b>{{$gejala->nama_gejala}}</b></h6>
                                         <div class="container-fluid mt-4">
@@ -108,6 +136,7 @@
                                             </div>
                                         </div>
                                     @endforeach
+
                                     <div class="mt-4 row  justify-content-center" >
                                         <div class="col-auto">
                                             <div>
@@ -154,6 +183,19 @@
                             <div class="col-md-6 offset-md-3 text-center">
                                 <div class="pengecekan-konten">
                                     <h4 style="font-weight: bold" class="mb-4">Hasil Pengecekan</h4>
+
+                                    <div class="p-3 text-left mb-3 bg-neutral-500">
+                                        <p class="mb-3 h6 font-weight-normal">
+                                            Nama Panjang: {{$dataPengunjung['fullName']}}
+                                        </p>
+                                        <p class="mb-3 h6 font-weight-normal">
+                                            Umur: {{$dataPengunjung['age']}}
+                                        </p>
+                                        <p class="mb-0  h6 font-weight-normal">
+                                            Jenis Kelamin: {{$dataPengunjung['gender']}}
+                                        </p>
+                                    </div>
+
                                     <table class="table">
                                         <thead>
                                         <tr>
@@ -181,7 +223,7 @@
                                     </table>
                                     {{-- <h5>Kemungkinan anda terkena Demam Berdarah adalah {{$cfCombine*100}}%</h5> --}}
                                     <div class="mt-4 row" >
-                                        <div class="col-md-4">
+                                        <div class="col-md-12">
                                             {{-- @if (!$gejalas->hasMorePages()) --}}
                                             <button type="button" class="btn btn-warning" wire:click="kembaliCek" wire:loading.attr="disabled" >Kembali</button>
                                             {{-- @endif --}}

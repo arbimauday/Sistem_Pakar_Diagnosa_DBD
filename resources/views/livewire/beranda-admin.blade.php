@@ -19,7 +19,7 @@
     <div class="row">
         <div class="col-sm-3">
             <a href="{{route('diagnosa')}}">
-                <div class="card b-admin-item">
+                <div class="card b-admin-itemP">
                     <div class="card-header text-center">
                         <span style="font-size: 3em; color: Tomato;">
                             <i class="fas fa-virus"></i>
@@ -31,7 +31,7 @@
         </div>
         <div class="col-sm-3">
             <a href="{{route('gejala')}}">
-                <div class="card b-admin-item">
+                <div class="card b-admin-itemP">
                     <div class="card-header text-center">
                         <span style="font-size: 3em; color: Mediumslateblue;">
                             <i class="fas fa-head-side-cough"></i>
@@ -43,7 +43,7 @@
         </div>
         <div class="col-sm-3">
             <a href="{{route('relasi')}}">
-                <div class="card b-admin-item">
+                <div class="card b-admin-itemP">
                     <div class="card-header text-center">
                         <span style="font-size: 3em; color: Dodgerblue;">
                             <i class="fas fa-capsules"></i>
@@ -55,7 +55,7 @@
         </div>
         <div class="col-sm-3">
             <a href="{{route('rule')}}">
-                <div class="card b-admin-item">
+                <div class="card b-admin-itemP">
                     <div class="card-header text-center">
                         <span style="font-size: 3em; color: yellow;">
                             <i class="fas fa-balance-scale"></i>

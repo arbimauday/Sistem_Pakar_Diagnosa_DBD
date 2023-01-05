@@ -8,6 +8,7 @@ use App\Http\Livewire\Pengecekan;
 use App\Http\Livewire\Relasi;
 use App\Http\Livewire\Rule;
 use App\Http\Livewire\Dashboard;
+use App\Http\Livewire\Pengunjung;
 
 /*
 |--------------------------------------------------------------------------
@@ -51,6 +52,7 @@ Route::middleware(['auth:sanctum', 'verified'])->group(function () {
     Route::get('/gejala', Gejala::class)->name('gejala');
     Route::get('/relasi', Relasi::class)->name('relasi');
     Route::get('/rule', Rule::class)->name('rule');
+    Route::get('/pengunjung', Pengunjung::class)->name('pengunjung');
 });
 
 

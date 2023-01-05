@@ -82,6 +82,11 @@
                                     <i class="align-middle mr-2 fas fa-fw fa-balance-scale"></i> <span class="align-middle">Rule</span>
                                 </a>
                             </li>
+                            <li class="sidebar-item {{ Request::is('pengunjung') ? 'aktif' : '' }}">
+                                <a href="{{route('pengunjung')}}" class="sidebar-link ">
+                                    <i class="align-middle mr-2 fa fa-users"></i> <span class="align-middle">Pengunjung</span>
+                                </a>
+                            </li>
 
                             <li class="sidebar-header">
                                 Elements

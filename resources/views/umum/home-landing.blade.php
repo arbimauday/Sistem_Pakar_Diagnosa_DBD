@@ -11,7 +11,7 @@
         <div class="container">
             <div class="collapse navbar-collapse wp-navbar-custom" id="navbarText">
                 <div class="ml-auto py-1">
-                    <a href="{{route('home.new-pengecekan')}}" class="btn btn-blue-600 btn-sm">Cek Sekarang</a>
+                    <a href="{{route('pengecekan')}}" class="btn btn-blue-600 btn-sm">Cek Sekarang</a>
                 </div>
             </div>
         </div>
@@ -39,7 +39,7 @@
                                 Silahkan cek diri Anda dengan sistem kami
                             </p>
 
-                            <a href="{{route('home.new-pengecekan')}}" class="btn btn-blue-300">Cek Sekarang</a>
+                            <a href="{{route('pengecekan')}}" class="btn btn-blue-300">Cek Sekarang</a>
                         </div>
                     </div>
                 </div>

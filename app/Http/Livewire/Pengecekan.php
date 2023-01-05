@@ -5,6 +5,7 @@ namespace App\Http\Livewire;
 use App\Models\Diagnosa;
 use App\Models\Gejala;
 use App\Models\Relasi;
+use App\Models\Pengunjung as ModalPengunjung;
 use Illuminate\Support\Arr;
 use Livewire\Component;
 use Livewire\WithPagination;
@@ -21,6 +22,10 @@ class Pengecekan extends Component
     public $cfCombine = [];
     public $prmis = [];
     public $layoutHasil = 0;
+
+    public $fullName, $gender, $age;
+    public $dataPengunjung;
+
 
     public function mount()
     {
@@ -79,6 +84,12 @@ class Pengecekan extends Component
     {
         // dd($this->cfUser);
 
+        $this->validate([
+            'fullName' => 'required',
+            'gender' => 'required',
+            'age' => 'required',
+        ]);
+
         $this->diagnosas = Diagnosa::all();
 
         // $this->cfUser;
@@ -111,11 +122,32 @@ class Pengecekan extends Component
                 }
             }
 
-            // dd($cek);
+//             dd($cek);
         }
-        // dd($this->cfCombine);
+//         dd($this->cfCombine);
+
+        $dataPengunjung = ModalPengunjung::create([
+            'fullName' => $this->fullName,
+            'gender' => $this->gender,
+            'age' => $this->age,
+            'keterangan' => $this->diagnosas[0]->keterangan,
+            'diagnosaId' => ''
+        ]);
+
+//        dd($dataPengunjung->getAttributes());
+
+        $this->dataPengunjung = $dataPengunjung->getAttributes();
+//        dd($this->dataPengunjung);
+        $this->resetInputs();
 
         $this->layoutHasil = 1;
+    }
+
+    public function resetInputs()
+    {
+        $this->fullName = '';
+        $this->gender = '';
+        $this->age = '';
     }
 
     public function kembaliCek()
